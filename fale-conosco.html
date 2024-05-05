@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tudo Sobre Google Glass</title>
     <link rel="stylesheet"  href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
 </head>
 <script src= "_javascript/funcoes.js"></script>
 <body>
@@ -27,40 +28,53 @@
     </ul>
     </nav>
     </header>
-Fale Conosco > Contato
-Formulário de Contato
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+    <section id="corpo-full">
+        <article id="notocia-principal">
+            <header id="cabecalho-artigo">
+                <hgroup>
+                <h3>Fale Conosco > Contato</h3>
+                <h1>Formulário de Contato</h1>
+                    <h2>por Luiz Gabriel</h2>
+                <h3 class="direita">Atualizado em 01/Maio/2024</h3>
+                </hgroup>
+            </header>
+<form>
+<fieldset id="usuario"><legend>Identificação do Usuário</legend>
+    <p><label for="cnome">Nome:</label> <input type="text" name="tname" id="cnome" size="20" maxlength="6" placeholder="Nome Completo"></p>
+    <p><label for="csenha">Senha:</label> <input type="password" name="tsenha" id="csenha" maxlength="8" placeholder="8 Digitos"/> </p>
+    <p><label for="cemail">E-mail:</label> <input type="email" name="temail" id="cemail" size="20" maxlength="40"/> </p>
+    <fieldset id="sexo"><legend>Sexo:</legend> 
+        <input type="radio" name="sexo" id="cmasc"/><label for="cmasc"> Masculino</label><br/>
+        <input type="radio" name="sexo" id="cfem"/><label for="cfem">Feminino</label> 
+    </fieldset>
+    <p>Data de Nascimento:<input type="date" name="tdate" id="cdate"/> </p>
+</fieldset>
 
-Identificação do Usuário
-    Nome:
-    Senha:
-    E-mail:
-    Sexo:
-        - Masculino
-        - Feminino
-    Data de Nascimento:
+<fieldset id="endereco"><legend>Endereço do Usuário</legend>
+    <p><label for="crua">Logradouro:</label><input type="text" name="trua" id="crua" size="13" maxlength="80" placeholder="Rua, Avenida, Tavessa"/> </p>
+    <p><label for="cnumber">Número:</label><input type="number" name="tnumber" id="cnumber" min="0" max="99999"/> </p>
+    <p><label for="cestado">Estado:</label></p>
+    <p><label for="crua">Cidade: </label></p>
+</fieldset>
 
-Endereço do Usuário
-    Logradouro:
-    Número:
-    Estado:
-    Cidade:
-
-Mensagem do Usuário
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
     Grau de Urgência:
     Mensagem:
+</fieldset>
 
-Quero um Google Glass
+<fieldset id="pedido"><legend>Quero um Google Glass</legend>
     Gostaria de adquirir um Google Glass quando disponível
     Cor:
     Quantidade:
     Preço Total: R$
-
+</fieldset>
 
 [BOTÃO ENVIAR]
-
-<footer id="rodape">
+</form>
+        </article>
+    </section>
+        
+    <footer id="rodape">
     <p>Copyright 2024 - by Luiz Gabriel<br>
     <a href="http://facebook.com" target="_blank">Facebook</a> | 
     <a href="http://Twitter.com" target="_blank">Twitter</a></p>
